@@ -150,152 +150,152 @@ export default function BioPage() {
         <div className="w-1/2 overflow-y-auto p-5">
             <div className="h-screen my-5 ">
 
-                    {/* DOTS */}
-                  <div className='flex justify-between'>
-                    <p className='text-2xl font-bold'>Inhabitants - DOTs: {dotsNftData.length}</p>
-                    <button type="button" className="text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-xs px-3 py-1.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2">
-                    <svg className="w-4 h-4 mr-2 -ml-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path></svg>
-                    Follow @inhabitants_
-                  </button>
-                  </div>
+            {/* DOTS */}
+            <div className='flex justify-between'>
+              <p className='text-2xl font-bold'>Inhabitants - DOTs: {dotsNftData.length}</p>
+              <button type="button" className="text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-xs px-3 py-1.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2">
+              <svg className="w-4 h-4 mr-2 -ml-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path></svg>
+              Follow @inhabitants_
+            </button>
+            </div>
 
-                  {
-                    dotsNftData.length > 0 ?
-                    <div className="container mx-auto px-5 py-2 lg:px-1 lg:pt-4">
-                    <div className=" flex flex-wrap ">
-                      <div className="flex w-1/2 flex-wrap">
-                        <div className="w-1/2 p-1 md:p-2">
-                          {
-                            dotsNftData[0] &&
-                            <img
-                            alt="gallery"
-                            className="block h-full w-full rounded-lg object-cover object-center"
-                            src={dotsNftData[0]?.image} />
-                          }
-                          
-                        </div>
-                        <div className="w-1/2 p-1 md:p-2">
-                        {
-                            dotsNftData[1] &&
-                            <img
-                            alt="gallery"
-                            className="block h-full w-full rounded-lg object-cover object-center"
-                            src={dotsNftData[1]?.image} />
-                          }
-                        </div>
-                        <div className="w-full p-1 md:p-2">
-                        {
-                            dotsNftData[2] &&
-                            <img
-                            alt="gallery"
-                            className="block h-full w-full rounded-lg object-cover object-center"
-                            src={dotsNftData[2]?.image} />
-                          }
-                        </div>
-                      </div>
-                      <div className="flex w-1/2 flex-wrap">
-                        <div className="w-full p-1 md:p-2">
-                        {
-                            dotsNftData[3] &&
-                            <img
-                            alt="gallery"
-                            className="block h-full w-full rounded-lg object-cover object-center"
-                            src={dotsNftData[3]?.image} />
-                          }
-                        </div>
-                        <div className="w-1/2 p-1 md:p-2">
-                        {
-                            dotsNftData[4] &&
-                            <img
-                            alt="gallery"
-                            className="block h-full w-full rounded-lg object-cover object-center"
-                            src={dotsNftData[4]?.image} />
-                          }
-                        </div>
-                        <div className="w-1/2 p-1 md:p-2">
-                        {
-                            dotsNftData[5] &&
-                            <img
-                            alt="gallery"
-                            className="block h-full w-full rounded-lg object-cover object-center"
-                            src={dotsNftData[5]?.image} />
-                          }
-                        </div>
-                      </div>
+              {
+                dotsNftData.length > 0 ?
+                <div className="container mx-auto px-5 py-2 lg:px-1 lg:pt-4">
+                <div className=" flex flex-wrap ">
+                  <div className="flex w-1/2 flex-wrap">
+                    <div className="w-1/2 p-1 md:p-2">
+                      {
+                        dotsNftData[0] &&
+                        <img
+                        alt="gallery"
+                        className="block h-full w-full rounded-lg object-cover object-center"
+                        src={dotsNftData[0]?.image} />
+                      }
+                      
                     </div>
-                    <div className="grid gap-4  grid-cols-2 md:grid-cols-4 mt-4">
-                    <div>
-                        { dotsNftData[6] && 
-                        <img className="h-auto max-w-full rounded-lg" src={dotsNftData[6]?.image} alt="" />
-                        }
+                    <div className="w-1/2 p-1 md:p-2">
+                    {
+                        dotsNftData[1] &&
+                        <img
+                        alt="gallery"
+                        className="block h-full w-full rounded-lg object-cover object-center"
+                        src={dotsNftData[1]?.image} />
+                      }
                     </div>
-                    <div>
-                    { dotsNftData[7] && 
-                        <img className="h-auto max-w-full rounded-lg" src={dotsNftData[7]?.image} alt="" />
-                        }
+                    <div className="w-full p-1 md:p-2">
+                    {
+                        dotsNftData[2] &&
+                        <img
+                        alt="gallery"
+                        className="block h-full w-full rounded-lg object-cover object-center"
+                        src={dotsNftData[2]?.image} />
+                      }
                     </div>
-                      <div>
-                      { dotsNftData[8] && 
-                        <img className="h-auto max-w-full rounded-lg" src={dotsNftData[8]?.image} alt="" />
-                        }
-                      </div>
-                      <div>
-                      { dotsNftData[9] && 
-                        <img className="h-auto max-w-full rounded-lg" src={dotsNftData[9]?.image} alt="" />
-                        }
-                      </div>
                   </div>
-                  <div className="grid gap-4  grid-cols-2 md:grid-cols-4 mt-4">
-                      <div>
-                      { dotsNftData[10] && 
-                        <img className="h-auto max-w-full rounded-lg" src={dotsNftData[10]?.image} alt="" />
-                        }
-                      </div>
-                      <div>
-                      { dotsNftData[11] && 
-                        <img className="h-auto max-w-full rounded-lg" src={dotsNftData[11]?.image} alt="" />
-                        }
-                      </div>
-                      <div>
-                      { dotsNftData[12] && 
-                        <img className="h-auto max-w-full rounded-lg" src={dotsNftData[12]?.image} alt="" />
-                        }
-                      </div>
-                      <div>
-                      { dotsNftData[13] && 
-                        <img className="h-auto max-w-full rounded-lg" src={dotsNftData[13]?.image} alt="" />
-                        }
-                      </div>
-                  </div>
-                  </div> : null
-                  }
-                    
-                  {/* Planets */}
-                  
-                   <div className='flex justify-between mt-10 mb-3'>
-                    <p className='text-2xl font-bold'>Inhabitants - United Planets: {planetsNftData.length}</p>
-                    <button type="button" className="text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4
-                     focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-xs px-3 py-1.5 text-center inline-flex 
-                     items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2">
-                      <svg className="w-4 h-4 mr-2 -ml-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path></svg>
-                      Follow @inhabitants_
-                  </button>
-                  </div>
-                  {
-                    planetsNftData.length > 0 ? 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-x-1 gap-y-2">
-                  {planetsNftData.map((nft, index) => (
-                      <div className="relative" key={index}>
-                          <video width="200" height="200" muted  className='rounded-md'>
-                            <source src={nft.image} type="video/mp4" />
-                            Your browser does not support the video tag.
-                          </video>
-                          <div className="absolute bottom-3 mx-5 font-semibold text-center text-[10px] text-gray-800 bg-white px-2 py-1 rounded-md">{nft.title} #{nft.tokenId}</div>
-                      </div>
-                    ))}
+                  <div className="flex w-1/2 flex-wrap">
+                    <div className="w-full p-1 md:p-2">
+                    {
+                        dotsNftData[3] &&
+                        <img
+                        alt="gallery"
+                        className="block h-full w-full rounded-lg object-cover object-center"
+                        src={dotsNftData[3]?.image} />
+                      }
                     </div>
-                    : null
-                  }
+                    <div className="w-1/2 p-1 md:p-2">
+                    {
+                        dotsNftData[4] &&
+                        <img
+                        alt="gallery"
+                        className="block h-full w-full rounded-lg object-cover object-center"
+                        src={dotsNftData[4]?.image} />
+                      }
+                    </div>
+                    <div className="w-1/2 p-1 md:p-2">
+                    {
+                        dotsNftData[5] &&
+                        <img
+                        alt="gallery"
+                        className="block h-full w-full rounded-lg object-cover object-center"
+                        src={dotsNftData[5]?.image} />
+                      }
+                    </div>
+                  </div>
+                </div>
+                <div className="grid gap-4  grid-cols-2 md:grid-cols-4 mt-4">
+                <div>
+                    { dotsNftData[6] && 
+                    <img className="h-auto max-w-full rounded-lg" src={dotsNftData[6]?.image} alt="" />
+                    }
+                </div>
+                <div>
+                { dotsNftData[7] && 
+                    <img className="h-auto max-w-full rounded-lg" src={dotsNftData[7]?.image} alt="" />
+                    }
+                </div>
+                  <div>
+                  { dotsNftData[8] && 
+                    <img className="h-auto max-w-full rounded-lg" src={dotsNftData[8]?.image} alt="" />
+                    }
+                  </div>
+                  <div>
+                  { dotsNftData[9] && 
+                    <img className="h-auto max-w-full rounded-lg" src={dotsNftData[9]?.image} alt="" />
+                    }
+                  </div>
+              </div>
+              <div className="grid gap-4  grid-cols-2 md:grid-cols-4 mt-4">
+                  <div>
+                  { dotsNftData[10] && 
+                    <img className="h-auto max-w-full rounded-lg" src={dotsNftData[10]?.image} alt="" />
+                    }
+                  </div>
+                  <div>
+                  { dotsNftData[11] && 
+                    <img className="h-auto max-w-full rounded-lg" src={dotsNftData[11]?.image} alt="" />
+                    }
+                  </div>
+                  <div>
+                  { dotsNftData[12] && 
+                    <img className="h-auto max-w-full rounded-lg" src={dotsNftData[12]?.image} alt="" />
+                    }
+                  </div>
+                  <div>
+                  { dotsNftData[13] && 
+                    <img className="h-auto max-w-full rounded-lg" src={dotsNftData[13]?.image} alt="" />
+                    }
+                  </div>
+              </div>
+              </div> : null
+              }
+                
+              {/* Planets */}
+              
+                <div className='flex justify-between mt-10 mb-3'>
+                <p className='text-2xl font-bold'>Inhabitants - United Planets: {planetsNftData.length}</p>
+                <button type="button" className="text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4
+                  focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-xs px-3 py-1.5 text-center inline-flex 
+                  items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2">
+                  <svg className="w-4 h-4 mr-2 -ml-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path></svg>
+                  Follow @inhabitants_
+              </button>
+              </div>
+              {
+                planetsNftData.length > 0 ? 
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-x-1 gap-y-2">
+              {planetsNftData.map((nft, index) => (
+                  <div className="relative" key={index}>
+                      <video width="200" height="200" muted  className='rounded-md'>
+                        <source src={nft.image} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                      <div className="absolute bottom-3 mx-5 font-semibold text-center text-[10px] text-gray-800 bg-white px-2 py-1 rounded-md">{nft.title} #{nft.tokenId}</div>
+                  </div>
+                ))}
+                </div>
+                : null
+              }
   
                   {/* Founders DAO */}
 
